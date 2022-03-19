@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Jimenez | Contacto</title>
+</head>
+<body id="body-contact">
+    <header class="header">
+        <nav class="navbar flex-row container">
+            <picture class="logo">
+                <img id="logo" src="../assets/img/logo.png" alt="Logo de la marca Jimenez panaderia y cafeteria">
+            </picture>
+            <ul class="menu flex-row">
+                <li class="menu__item">
+                    <a href="../index.html" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./product.html" class="menu__link">Products</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./about.html" class="menu__link">About us</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./catering.html" class="menu__link">Catering</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./contact.html" class="menu__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form class="formulario">
+        <h2 class="formulario__titulo">Contactanos</h2>
+        <p class="formulario__parrafo">Rellena los campos</p>
+
+        <div class="formulario__contenedor">
+            <div class="formulario__grupo">
+                <input type="text" id="name" class="formulario__input" placeholder=" ">
+                <label for="name" class="formulario_label">Nombre: </label>
+                <span class="formulario__line"></span>
+            </div>
+            <div class="formulario__contenedor">
+                <div class="formulario__grupo">
+                    <input type="email" id="email" class="formulario__input" placeholder=" ">
+                    <label for="email" class="formulario_label">E-mail: </label>
+                    <span class="formulario__line"></span>
+                </div>
+                <div class="formulario__contenedor">
+                    <div class="formulario__grupo">
+                        <input type="text" id="mensaje" class="formulario__input" placeholder=" ">
+                        <label for="mensaje" class="formulario_label">Mensaje: </label>
+                        <span class="formulario__line"></span>
+                    </div>
+
+                    <input type="submit" class="formulario__submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
