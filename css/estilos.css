@@ -30,7 +30,6 @@
 html {
     font-size: 62.5%;
     font-family: var(--font-primary);
-    color: var(--secundaria);
     background-color: var(--principal);
 }
 
@@ -55,17 +54,14 @@ a {
     flex-direction: column;
 }
 
-.container {
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-
 /* ---------------------------------------- Sección INDEX -------------------------------------------- */
 
 #body-index {
     width: 100%;
     max-width: 100%;
+    background-color: var(--principal);
+    font-family: var(--font-primary);
+    color: var(--secundaria);
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -86,7 +82,7 @@ a {
 }
 
 button {
-    font-size: .35em;
+    font-size: 1.6em;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 15px;
@@ -104,8 +100,18 @@ button:hover {
     background-color: #161615;
 }
 
+.h1, h1 {
+    font-size: 6.5em;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
 #hero {
-    font-size: 5.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +124,7 @@ button:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-     ,url(../assets/img/granosCafe.jpg);   /* ../ funciona en general (borrar esto) */
+    ,url(../assets/img/granosCafe.jpg);
     
     grid-area: hero;
 }
@@ -132,7 +138,7 @@ button:hover {
 
 .header .navbar {
     min-height: 10vh;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0px 2rem;
     flex-wrap: wrap;
@@ -140,7 +146,7 @@ button:hover {
 
 .header .menu {
     flex-basis: 40%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header .menu__item {
@@ -165,11 +171,21 @@ header .logo {
     max-width: 435px;
 }
 
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
 /* ----------------------------- Sección producto ------------------------- */
 
 #body-product {
     width: 100%;
     max-width: 100%;
+    color: var(--secundaria);
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -186,6 +202,7 @@ header .logo {
 #body-contact {
     display: flex;
     min-height: 100vh;
+    color: var(--secundaria);
     width: 100%;
     max-width: 100%;
     margin: auto;
@@ -198,102 +215,12 @@ header .logo {
     "footer     footer      footer";
 }
 
-.formulario {
-    background-color: #fff;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    text-align: center;
-    grid-area: contenido;
-}
-
-.formulario__titulo {
-    font-size: 2rem;
-    margin-bottom: .5em;
-}
-
-.formulario__parrafo {
-    font-weight: 300;
-}
-
-.formulario__contenedor {
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em;
-}
-
-.formulario__grupo {
-    position: relative;
-    --color: #5757577e;
-}
-
-.formulario__input {
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding: .6em .3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-}
-
-.formulario__input:not(:placeholder-shown) {
-    color: #4d4646;
-}
-
-.formulario__input:focus + .formulario__label,
-.formulario__input:not(:placeholder-shown) + .formulario__label {
-    transform: translateY(-12px) scale(.7);
-    transform-origin: left top;
-    color: #3866f2
-}
-
-.formulario__label {
-    color: var(--color);
-    cursor: pointer;
-    position: absolute;
-    top: 0px;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
-}
-
-.formulario__submit {
-    background: #3866f2;
-    color: #fff;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .8em 0;
-    border: none;
-    border-radius: .5em;
-}
-
-.formulario__line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #3866f2;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform .4s;
-}
-
-.formulario__input:focus ~ .formulario__line,
-.formulario__input:not(:placeholder-shown) ~ .formulario__line {
-    transform: scale(1);
-}
-
 /* ------------------------------------------------- Sección About ------------------------------------------- */
 
 #body-about {
     width: 100%;
     max-width: 100%;
+    color: var(--secundaria);
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
