@@ -118,7 +118,7 @@ button:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url(/assets/img/granosCafe.jpg);
+    ,url(../assets/img/granosCafe.jpg);
     
     grid-area: hero;
 }
