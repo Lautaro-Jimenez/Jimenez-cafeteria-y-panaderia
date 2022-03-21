@@ -96,10 +96,6 @@ button {
     -o-border-radius: 15px;
 }
 
-button:hover {
-    background-color: #161615;
-}
-
 .h1, h1 {
     font-size: 6.5em;
 }
@@ -109,24 +105,6 @@ button:hover {
     margin-bottom: 0;
     font-weight: bold;
     line-height: 1.5;
-}
-
-#hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    color: #fff;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
-    ,url(../assets/img/granosCafe.jpg);
-    
-    grid-area: hero;
 }
 
 /* --------------------------------------- Header ---------------------------------------------------- */
@@ -323,18 +301,18 @@ ol, ul {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .header {
-        width: 40%;
-        grid-template-rows: 1fr;
-        padding: 20px;
+@media screen and (max-width: 430px) {
+    #body-index {
+        width: 100%;
+        max-width: 100%;
     }
 
-    .grupo-1 {
-        width: 40%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 22px;
-        padding: 30px 0px;
+    header .logo {
+        flex-basis: 25%;
+    }
+    
+    #logo {
+        max-width: 300px;
     }
 }
 
