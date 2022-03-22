@@ -161,17 +161,17 @@ ol, ul {
 /* ----------------------------- Sección producto ------------------------- */
 
 #body-product {
-    width: 100%;
-    max-width: 100%;
+    background-color: var(--color-primario-fondo);
     color: var(--secundaria);
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
-    "header     header      header"
-    "contenido  contenido   contenido"
-    "footer     footer      footer";
+}
+
+.card {
+    background-color: #11110e;
+    border: 1px solid #212529;
+}
+
+.card .precio {
+    text-align: end;
 }
 
 
