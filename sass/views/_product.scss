@@ -1,0 +1,19 @@
+#body-product {
+    background-color: var(--color-primario-fondo);
+    color: $secundaria;
+}
+
+.card {
+    background-color: #11110e;
+    border: 1px solid #212529;
+
+    .precio {
+        text-align: end;
+    }
+}
+
+.btn-primary {
+    background-color: rgb(247, 182, 63);
+    border-color: rgb(247, 182, 63);
+    color: #11110e;
+}

@@ -1,0 +1,27 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+@import './misc/animations';
+
+/* PARTIALS */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* VIEWS */
+
+@import './views/home';
+@import './views/about';
+@import './views/preguntas_frecuentes';
+@import './views/product';
+@import './views/contact';
+
+/* MEDIA QUERY */
+
+@import './misc/mediaquery';

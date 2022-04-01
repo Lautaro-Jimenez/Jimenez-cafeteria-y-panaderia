@@ -1,0 +1,38 @@
+#body-about {
+    width: 100%;
+    max-width: 100%;
+    color: $secundaria;
+    background-color: #11110e;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "header     header"
+    "contenido  imagen"
+    "contenido  imagen"
+    "contenido  imagen"
+    "footer     footer";
+}
+
+.texto-animado--desafio {
+    background: #11110e;
+    animation-duration: 6s;
+    animation-name: slidein;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    font-size: 2em;
+    overflow: hidden;
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left:100%;
+        width:300%
+    }
+    to {
+        margin-left:0%;
+        width:100%;
+    }
+}

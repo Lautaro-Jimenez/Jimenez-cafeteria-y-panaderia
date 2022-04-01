@@ -1,0 +1,67 @@
+.footer {
+    width: 100%;
+    background: #1a1a17;
+    color: #fff;
+    grid-area: footer;
+}
+
+.grupo-1 {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo-1 .box figure img {
+    width: 250px;
+}
+
+.grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.grupo-1 .box p {
+    font-size: 1.3em;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.grupo-1 .redes-sociales a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #474755;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 30px;
+    font-size: 1.6em;
+}
+
+.grupo-1 .redes-sociales a:hover {
+    color: gray;
+}
+
+.footer .grupo-2 {
+    background-color: #1a1a18;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}

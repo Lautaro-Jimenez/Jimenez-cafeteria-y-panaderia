@@ -1,0 +1,43 @@
+#body-index {
+    width: 100%;
+    max-width: 100%;
+    background-color: $principal;
+    font-family: $font-primary;
+    color: $secundaria;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header     header      header"
+    "contenido  contenido   contenido"
+    "footer     footer      footer";
+
+    .contenido {
+        background: #11110e;
+        grid-area: contenido;
+    }
+}
+
+.foto-index {
+    height: 100%;
+}
+
+button {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    color: white;
+}
+
+.h1, h1 {
+    font-size: 6.5em;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: 1.5;
+}
