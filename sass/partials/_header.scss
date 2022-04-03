@@ -1,39 +1,38 @@
 header {
     background-color: $principal;
     grid-area: header;
-}
 
-header .navbar {
-    min-height: 10vh;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 2rem;
-    flex-wrap: wrap;
-}
+    .navbar {
+        min-height: 10vh;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 2rem;
+        flex-wrap: wrap;
+    }
 
-header .menu {
-    flex-basis: 40%;
-    justify-content: space-around;
-}
+    .menu {
+        flex-basis: 40%;
+        justify-content: space-around;
 
-header .menu__item {
-    border: .5px solid $principal;
-    transition: border-color .36s ease-in-out;
-}
+        &__item {
+            border: .5px solid $principal;
+            transition: border-color .36s ease-in-out; 
 
-header .menu__item:hover {
-    border: .5px solid $secundaria;
-}
+            &:hover {
+                border: .5px solid $secundaria;
+            }
 
-.menu .menu__item .menu__link {
-    font-size: $text-md;
-    padding: .5rem;
-}
+            .menu__link {
+                font-size: $text-md;
+                padding: .5rem;
+            }
+        }
+    }
 
-header .logo {
-    flex-basis: 25%;
+    .logo {
+        flex-basis: 25%;
+    }
 }
-
 #logo {
     max-width: 435px;
 }
