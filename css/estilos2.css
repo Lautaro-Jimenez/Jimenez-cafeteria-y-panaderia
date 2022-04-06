@@ -55,9 +55,6 @@ a {
   color: inherit;
   display: inline-block; }
 
-.flex-row {
-  display: flex; }
-
 .flex-column {
   display: flex;
   flex-direction: column; }
@@ -150,13 +147,20 @@ header {
   grid-area: header; }
   header .navbar {
     min-height: 10vh;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    gap: 2rem;
     padding: 0px 2rem;
     flex-wrap: wrap; }
   header .menu {
     flex-basis: 40%;
-    justify-content: space-around; }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem; }
     header .menu__item, header .menu__item--active {
       border: 0.5px solid #11110e;
       transition: border-color .36s ease-in-out; }

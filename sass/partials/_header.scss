@@ -4,15 +4,14 @@ header {
 
     .navbar {
         min-height: 10vh;
-        justify-content: space-around;
-        align-items: center;
+        @include flex (row, space-around, center, 2rem);
         padding: 0px 2rem;
         flex-wrap: wrap;
     }
 
     .menu {
         flex-basis: 40%;
-        justify-content: space-around;
+        @include flex (row, space-around, center, 2rem);
 
         &__item {
             border: .5px solid $principal;
