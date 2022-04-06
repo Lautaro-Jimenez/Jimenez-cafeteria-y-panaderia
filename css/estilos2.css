@@ -160,7 +160,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 2rem; }
+    gap: 0; }
     header .menu__item, header .menu__item--active {
       border: 0.5px solid #11110e;
       transition: border-color .36s ease-in-out; }

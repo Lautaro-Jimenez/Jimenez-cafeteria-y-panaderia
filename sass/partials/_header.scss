@@ -11,7 +11,7 @@ header {
 
     .menu {
         flex-basis: 40%;
-        @include flex (row, space-around, center, 2rem);
+        @include flex (row, space-around, center);
 
         &__item {
             border: .5px solid $principal;
