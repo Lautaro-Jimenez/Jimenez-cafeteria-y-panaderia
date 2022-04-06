@@ -6,3 +6,32 @@ $text-lg: 3em;
 $text-md: 1.8em;
 $text-sm: 1.2em;
 $font-alternativa: "Arvo", serif;
+
+$mapaPaddings: (
+    xlar: 5rem,
+    lar: 3rem,
+    med: 2rem,
+    sma: 1.5rem,
+    xsma: 1rem
+);
+
+@each $var, $val in $mapaPaddings {
+    .p-#{$var} {
+        padding: #{$val};
+    }
+}
+
+$mapaImages: (
+    cafeCompu1: 'cafeCompu1',
+    cafeAnteojos: 'cafeAnteojos',
+    cafeLibreta: 'cafeLibreta'
+);
+
+@each $image, $value in $mapaImages {
+    .nosotrosIMG-#{$image} {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-image: url('../assets/img/#{$value}.jpg');
+    }
+}
