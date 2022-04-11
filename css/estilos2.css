@@ -280,8 +280,8 @@ button {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "header     header" "contenido  contenido" "contenido  contenido" "footer     footer"; }
+  grid-template-rows: 1fr;
+  grid-template-areas: "header     header" "contenido  contenido" "footer     footer"; }
 
 .titulo-aboutUs {
   text-align: center; }
@@ -293,10 +293,12 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem; }
+    gap: 2rem;
+    flex-direction: column; }
     .mainAbout .about-section article p {
       font-size: 1.5em;
-      padding: 2rem; }
+      padding: 2rem;
+      text-align: center; }
 
 #body-faq {
   background-image: linear-gradient(to left bottom, #25272a, #1e2224, #181d1d, #141816, #11120d);
@@ -396,7 +398,7 @@ button {
     grid-gap: 45px;
     padding: 40px 0px; }
   .formContacto {
-    width: 50%; } }
+    width: 40%; } }
 
 @media screen and (max-width: 768px) {
   .grupo-1 {
@@ -405,7 +407,7 @@ button {
     grid-gap: 30px;
     padding: 35px 0px; }
   .formContacto {
-    width: 100%; } }
+    width: 50%; } }
 
 @media screen and (max-width: 430px) {
   #body-index {
@@ -416,7 +418,7 @@ button {
   #logo {
     max-width: 300px; }
   .formContacto {
-    width: 100%; } }
+    width: 90%; } }
 
 @media screen and (max-width: 320px) {
   .grupo-1 {

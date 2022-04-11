@@ -6,10 +6,9 @@
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     grid-template-areas: 
     "header     header"
-    "contenido  contenido"
     "contenido  contenido"
     "footer     footer";
 }
@@ -27,11 +26,13 @@
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
+        flex-direction: column;
 
         article {
             p {
                 font-size: 1.5em;
                 padding: map-get($mapaPaddings, med );
+                text-align: center;
             }
         }
     }
