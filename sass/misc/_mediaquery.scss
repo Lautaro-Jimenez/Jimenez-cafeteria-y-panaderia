@@ -22,9 +22,17 @@
     .formContacto {
         width: 50%;
     }
+
+    #logo {
+        max-width: 380px;
+    }
+
+    header .navbar-toggler {
+        margin-top: -6.31rem;
+    }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
     #body-index {
         width: 100%;
         max-width: 100%;
@@ -35,11 +43,16 @@
     }
     
     #logo {
-        max-width: 300px;
+        max-width: 280px;
+        margin-right: 4.5rem;
     }
     
     .formContacto {
         width: 90%;
+    }
+
+    header .navbar-toggler {
+        margin-top: -4.9rem;
     }
 } 
 
@@ -50,4 +63,5 @@
         grid-gap: 10px;
         padding: 15px 0px;
     }
+    
 } 

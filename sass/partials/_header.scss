@@ -3,10 +3,17 @@ header {
     grid-area: header;
 
     .navbar {
-        min-height: 10vh;
-        @include flex (row, space-around, center, 2rem);
+        @include flex (row);
         padding: 0px 2rem;
         flex-wrap: wrap;
+
+        &-nav {
+            align-items: center;
+        }
+
+        &-toggler {
+            margin-top: -7.31rem;
+        }
     }
 
     .menu {
@@ -34,6 +41,7 @@ header {
     }
 
     .logo {
+        text-align: center;
         flex-basis: 25%;
     }
 }
@@ -48,4 +56,14 @@ dl, ol, ul {
 
 ol, ul {
     padding-left: 0;
+}
+
+#collapsibleNavbar {
+    justify-content: center;
+}
+
+ul>li>a {
+    margin-left: 20px;
+    font-size: 1.8em;
+    margin: 8px;
 }
