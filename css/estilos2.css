@@ -194,7 +194,10 @@ ol, ul {
 ul > li > a {
   margin-left: 20px;
   font-size: 1.8em;
-  margin: 8px; }
+  margin: 8px;
+  text-decoration: none !important; }
+  ul > li > a:hover {
+    color: darkgray; }
 
 .footer {
   width: 100%;
